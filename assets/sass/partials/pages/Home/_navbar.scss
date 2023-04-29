@@ -1,5 +1,6 @@
 #MainNav {
     position: fixed;
+    align-items: center;
     top: 0;
     left: 0;
     right: 0;
@@ -13,12 +14,22 @@
   display: flex;
   justify-content: space-between;
 
+  .mobile-nav-btn{
+    color: #222222;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    
+  }
   .logo {
     span {
       color: $mainColor;
     }
   }
   .nav-list {
+    
+    margin: 0 ;
     list-style: none;
     display: flex;
     &-item {
@@ -80,4 +91,13 @@
     z-index: 5;
     transition: 0.3s;
   }
+  @media (max-width: 991px)
+{
+.navbar ul {
+    display: none;
+}
+.mobile-nav-btn{
+  display: block;
+}
+}
 }
