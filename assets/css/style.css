@@ -1,0 +1,121 @@
+#MainNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 80px;
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#MainNav .logo span {
+  color: #106eea;
+}
+#MainNav .nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#MainNav .nav-list-item {
+  padding: 1rem;
+}
+#MainNav .nav-list-item:hover .nav-link {
+  color: #106eea;
+  cursor: pointer;
+}
+#MainNav .nav-list-item:hover .nav-link::before {
+  visibility: visible !important;
+  width: 100% !important;
+  height: 2px;
+  bottom: -6px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#MainNav .nav-list-item .nav-link {
+  position: relative;
+}
+#MainNav .nav-list-item .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #106eea;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#MainNav #Drop-down {
+  position: relative;
+}
+#MainNav #Drop-down-item {
+  cursor: pointer;
+}
+#MainNav #Drop-down-item:hover {
+  color: #106eea;
+}
+#MainNav #Drop-down:hover .dropdown-list {
+  visibility: visible !important;
+  top: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#MainNav .dropdown-list {
+  list-style: none;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+          box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  visibility: hidden;
+  position: absolute;
+  border-radius: 10px;
+  top: calc(100% + 20px);
+  background: white;
+  z-index: 5;
+  transition: 0.3s;
+}
+
+#Welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 75vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 0;
+  overflow: hidden;
+  position: relative;
+}
+#Welcome h2 {
+  color: #555555;
+  margin: 5px 0 30px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+#Welcome .welcome-text-container {
+  position: relative;
+}
+#Welcome::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}/*# sourceMappingURL=style.css.map */
